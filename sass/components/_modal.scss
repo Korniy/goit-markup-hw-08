@@ -154,7 +154,7 @@
 .checkbox__input:checked + .checkbox__span > .checkbox__icon {
   background-color: $accent-text-color;
   border-color: $accent-text-color;
-  background-image: url('../images/icons/icon-check.svg');
+  background-image: url("../images/icons/icon-check.svg");
   background-origin: border-box;
   background-size: contain;
 }

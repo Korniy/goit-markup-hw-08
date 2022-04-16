@@ -1,18 +1,15 @@
 // Секція переваги ADVANTAGES
 
 .advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.advantages__list {
-  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .advantages__item {
-  width: 270px;
-  height: 251px;
+  width: 450px;
+  height: 226px;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 .advantages__box {
@@ -31,16 +28,61 @@
 .advantages__title {
   margin-bottom: 10px;
 
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
 .advantages__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $second-text-color;
 }
+
+// .advantages {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+// .advantages__list {
+//   display: flex;
+// }
+// .advantages__item {
+//   width: 270px;
+//   height: 251px;
+
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+// .advantages__box {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   margin-bottom: 30px;
+//   background-color: $second-light-bg;
+//   height: 120px;
+// }
+// .advantages__icon {
+//   width: 70px;
+//   height: 70px;
+// }
+// .advantages__title {
+//   margin-bottom: 10px;
+
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+// }
+
+// .advantages__text {
+//   font-size: 14px;
+//   line-height: 1.71;
+//   letter-spacing: 0.03em;
+//   color: $second-text-color;
+// }

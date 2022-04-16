@@ -1,7 +1,7 @@
 // Основний шрифт
-$main-font: 'Roboto', sans-serif;
+$main-font: "Roboto", sans-serif;
 // Другорядний шрифт
-$secondary-font: 'Raleway', sans-serif;
+$secondary-font: "Raleway", sans-serif;
 
 // Основний колір
 $main-text-color: #212121;
@@ -14,3 +14,8 @@ $main-light-bg: #ffffff;
 $second-light-bg: #f5f4fa;
 $black-bg-color: #2f303a;
 $hero-bg-color: #c4c4c4;
+
+//Точки перелому Breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
