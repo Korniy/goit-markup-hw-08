@@ -55,6 +55,15 @@ span {
   border-bottom: 1px solid #ececec;
 }
 
+.page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .page-header__link {
   display: inline-block;
   margin-top: 16px;
@@ -75,16 +84,7 @@ span {
   display: none;
 }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.menu-btn {
+.page-header__btn {
   border: none;
   background-color: transparent;
   padding: 0;

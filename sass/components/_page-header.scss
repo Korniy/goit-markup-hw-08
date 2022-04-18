@@ -6,7 +6,10 @@
   background-color: $main-light-bg;
   border-bottom: 1px solid #ececec;
 }
-
+.page-container {
+  display: flex;
+  align-items: center;
+}
 .page-header__link {
   display: inline-block;
   margin-top: 16px;
