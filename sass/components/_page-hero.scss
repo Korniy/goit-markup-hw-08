@@ -3,25 +3,23 @@
 // Mobile version
 
 .page-hero {
-  max-width: 1600;
+  max-width: 480;
   height: 400;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
 
-  // background-image: linear-gradient(
-  //     to right,
-  //     rgba(47, 48, 58, 0.4),
-  //     rgba(47, 48, 58, 0.4)
-  //   ),
-  //   url("../images/hero.jpg");
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
-
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/images/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
-
   background-color: $hero-bg-color;
 }
 .page-hero__title {

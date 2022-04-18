@@ -56,10 +56,9 @@ span {
 }
 
 .page-header__link {
+  display: inline-block;
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-left: 15px;
-  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -76,13 +75,38 @@ span {
   display: none;
 }
 
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-left: auto;
+}
+
+.menu-btn__close {
+  display: none;
+}
+
 .page-hero {
-  max-width: 1600;
+  max-width: 480;
   height: 400;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-mobile.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   background-color: #c4c4c4;
 }
@@ -144,8 +168,8 @@ span {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   border-radius: 4px;
   background-color: #ffffff;
   opacity: 1;
@@ -182,7 +206,7 @@ span {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -294,8 +318,8 @@ span {
   margin-top: 20px;
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -341,8 +365,8 @@ span {
 
 .checkbox__link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #2196f3;
 }

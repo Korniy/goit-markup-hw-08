@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-left: auto;
+}
+.menu-btn__close {
+  display: none;
+}
