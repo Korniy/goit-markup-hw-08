@@ -1,12 +1,13 @@
 // Шапка сайту HEDER
 
-// Mobile version
-
 .page-header {
+  width: 100%;
+  height: 60px;
   background-color: $main-light-bg;
   border-bottom: 1px solid #ececec;
 }
-.page-container {
+
+.mobile {
   display: flex;
   align-items: center;
 }
@@ -22,14 +23,12 @@
   letter-spacing: 0.03em;
   color: #000000;
 }
-
 .nav {
   display: none;
 }
-.page-wrapper__list {
+.page-wrapper {
   display: none;
 }
-
 // .page-header {
 //   background-color: $main-light-bg;
 //   border-bottom: 1px solid #ececec;

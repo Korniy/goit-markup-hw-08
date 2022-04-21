@@ -5,8 +5,7 @@
   padding-bottom: 60px;
 }
 .advantages__item {
-  width: 450px;
-  height: 226px;
+  max-width: 450px;
 
   &:not(:last-child) {
     margin-bottom: 30px;
@@ -21,6 +20,7 @@
   background-color: $second-light-bg;
   height: 120px;
 }
+
 .advantages__icon {
   width: 70px;
   height: 70px;

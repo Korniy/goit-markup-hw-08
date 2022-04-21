@@ -41,3 +41,8 @@ ul {
 span {
   color: $accent-text-color;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

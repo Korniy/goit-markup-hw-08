@@ -1,14 +1,11 @@
 // Секція герой HERO
 
 // Mobile version
-
 .page-hero {
-  max-width: 480;
+  max-width: 480px;
   height: 400;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
 
   background-image: linear-gradient(
       to right,
@@ -19,15 +16,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: $hero-bg-color;
 }
 .page-hero__title {
   margin-bottom: 30px;
 
+  max-width: 360;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.61;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -36,11 +37,12 @@
 .page-hero__btn {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  min-width: 200px;
-  min-height: 50px;
+  //   min-width: 200px;
   padding: 9px 23px;
   border-radius: 4px;
   border: 1px solid $accent-text-color;
+
+  align-items: center;
   font-family: $main-font;
   font-weight: 700;
   font-size: 16px;
@@ -104,5 +106,5 @@
   //   &:hover,
   //   &:focus {
   //     background-color: #188ce8;
-  //   }
+  //  }
 }
