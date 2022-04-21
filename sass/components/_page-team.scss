@@ -17,6 +17,7 @@
 
   color: $main-text-color;
 }
+
 .team__item {
   width: 100%;
   height: 100%;
@@ -27,6 +28,24 @@
     // height: 460px;
   }
 }
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .team__item {
+    width: 354px;
+    height: auto;
+
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
 .team-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
