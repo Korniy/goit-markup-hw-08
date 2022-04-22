@@ -6,6 +6,15 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.footer-tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
+}
+
 .footer_link {
   display: block;
   margin-bottom: 20px;
@@ -66,6 +75,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $main-light-bg;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 .footer-wrapper__list {
   display: flex;
@@ -115,6 +128,11 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .footer-form__input {
   padding-left: 16px;
@@ -133,6 +151,9 @@
 
   &:focus {
     border-color: $accent-text-color;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
   }
 }
 .footer-form__btn {
