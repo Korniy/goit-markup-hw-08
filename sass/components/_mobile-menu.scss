@@ -4,11 +4,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-
   transform: translateX(100%);
   visibility: hidden;
   pointer-events: none;
   transition: transform 250ms ease-in;
+
+  z-index: 4;
 
   &.is-open {
     transform: translateX(0);
@@ -83,7 +84,7 @@
   background-color: transparent;
   padding: 0;
   margin-left: auto;
-  z-index: 1;
+  z-index: 5;
 
   & .mobile-btn__open {
     opacity: 1;

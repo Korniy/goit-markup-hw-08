@@ -29,14 +29,122 @@
 
     <header class="page-header">
       <div class="container page-container">
-        <a class="page-header__link link" href="index.html"><span>Web</span>Studio</a>
+        <!-- <a class="page-header__link link" href="index.html"><span>Web</span>Studio</a> -->
+
+        <!-- Кнопка мобільного меню, лого -->
+
+        <div class="mobile">
+          <a class="page-header__link link" href="index.html">
+            <span>Web</span>Studio
+          </a>
+          <button
+            type="button"
+            class="mobile-btn"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg
+              class="mobile-btn__icon"
+              width="40"
+              height="40"
+              aria-label="перемикач мобільного меню"
+            >
+              <use
+                class="mobile-btn__open"
+                href="./images/icons/menu.svg#icon-open_menu"
+              ></use>
+              <use
+                class="mobile-btn__close"
+                href="./images/icons/menu.svg#icon-close_menu"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Мобільне меню-->
+
+        <div class="mobile-overlay" data-menu>
+          <div class="mobile-menu">
+            <nav class="mobile-nav">
+              <ul class="mobile-nav__list list">
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link link current" href="index.html"
+                    >Студія</a
+                  >
+                </li>
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link link" href="portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link link" href="">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="mobile-contacts list">
+              <li class="mobile-contacts__item">
+                <a class="mobile-contacts__phone link" href="tel:+380961111111"
+                  >+380961111111</a
+                >
+              </li>
+              <li class="mobile-contacts__item">
+                <a
+                  class="mobile-contacts__mail link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-social list">
+              <li class="mobile-social__item">
+                <a
+                  class="mobile-social__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  class="mobile-social__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  class="mobile-social__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  class="mobile-social__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item list">
               <a class="nav__link link" href="index.html">Студія</a>
             </li>
             <li class="nav__item list">
-              <a class="nav__link link current" href="portfolio.html">Портфоліо</a>
+              <a class="nav__link link current" href="portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="nav__item list">
               <a class="nav__link link" href="">Контакти</a>
@@ -46,7 +154,10 @@
         <div class="page-wrapper">
           <ul class="page-wrapper__list">
             <li class="page-wrapper__item list">
-              <a class="page-wrapper__mail link" href="mailto:info@devstudio.com">
+              <a
+                class="page-wrapper__mail link"
+                href="mailto:info@devstudio.com"
+              >
                 <svg class="page-wrapper__icon" width="16" height="12">
                   <use href="images/icons/symbol-defs.svg#icon-sms"></use>
                 </svg>
@@ -56,7 +167,9 @@
             <li class="page-wrapper__item list">
               <a class="page-wrapper__phone link" href="tel:+380961111111">
                 <svg class="page-wrapper__icon" width="10" height="16">
-                  <use href="images/icons/symbol-defs.svg#icon-smartphone"></use>
+                  <use
+                    href="images/icons/symbol-defs.svg#icon-smartphone"
+                  ></use>
                 </svg>
                 +380961111111
               </a>
@@ -95,15 +208,19 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-overlay__img no-gap"
-                  src="./images/porfolio1.jpg"
+                  srcset="
+                    ./images/portfolio-img.jpg    1x,
+                    ./images/portfolio-img@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img.jpg"
                   alt=""
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <p class="portfolio-overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                  це дозволить відвідувачу отримати вичерпні відомості про компанію або приватну
-                  особу.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію або приватну особу.
                 </p>
               </div>
               <div class="portfolio-wrapper">
@@ -115,19 +232,25 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-overlay__img no-gap"
-                  src="./images/portfolio2.jpg"
+                  srcset="
+                    ./images/portfolio-img2.jpg    1x,
+                    ./images/portfolio-img2@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img2.jpg"
                   alt=""
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <p class="portfolio-overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                  це дозволить відвідувачу отримати вичерпні відомості про компанію або приватну
-                  особу.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію або приватну особу.
                 </p>
               </div>
               <div class="portfolio-wrapper">
-                <h2 class="portfolio-wrapper__title">Постер New Orlean vs Golden Star</h2>
+                <h2 class="portfolio-wrapper__title">
+                  Постер New Orlean vs Golden Star
+                </h2>
                 <p class="portfolio-wrapper__text">Дизайн</p>
               </div>
             </li>
@@ -135,15 +258,19 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-overlay__img no-gap"
-                  src="./images/portfolio3.jpg"
+                  srcset="
+                    ./images/portfolio-img3.jpg    1x,
+                    ./images/portfolio-img3@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img3.jpg"
                   alt=""
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <p class="portfolio-overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                  це дозволить відвідувачу отримати вичерпні відомості про компанію або приватну
-                  особу.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію або приватну особу.
                 </p>
               </div>
               <div class="portfolio-wrapper">
@@ -155,15 +282,19 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-overlay__img no-gap"
-                  src="./images/portfolio4.jpg"
+                  srcset="
+                    ./images/portfolio-img4.jpg    1x,
+                    ./images/portfolio-img4@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img4.jpg"
                   alt=""
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <p class="portfolio-overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                  це дозволить відвідувачу отримати вичерпні відомості про компанію або приватну
-                  особу.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію або приватну особу.
                 </p>
               </div>
               <div class="portfolio-wrapper">
@@ -175,15 +306,19 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-overlay__img no-gap"
-                  src="./images/portfolio5.jpg"
+                  srcset="
+                    ./images/portfolio-img5.jpg    1x,
+                    ./images/portfolio-img5@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img5.jpg"
                   alt=""
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <p class="portfolio-overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                  це дозволить відвідувачу отримати вичерпні відомості про компанію або приватну
-                  особу.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію або приватну особу.
                 </p>
               </div>
               <div class="portfolio-wrapper">
@@ -195,19 +330,25 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-overlay__img no-gap"
-                  src="./images/portfolio6.jpg"
+                  srcset="
+                    ./images/portfolio-img6.jpg    1x,
+                    ./images/portfolio-img6@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img6.jpg"
                   alt=""
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <p class="portfolio-overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                  це дозволить відвідувачу отримати вичерпні відомості про компанію або приватну
-                  особу.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію або приватну особу.
                 </p>
               </div>
               <div class="portfolio-wrapper">
-                <h2 class="portfolio-wrapper__title">Inspiration has no Borders</h2>
+                <h2 class="portfolio-wrapper__title">
+                  Inspiration has no Borders
+                </h2>
                 <p class="portfolio-wrapper__text">Веб-сайт</p>
               </div>
             </li>
@@ -215,19 +356,25 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-overlay__img no-gap"
-                  src="./images/portfolio7.jpg"
+                  srcset="
+                    ./images/portfolio-img7.jpg    1x,
+                    ./images/portfolio-img7@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img7.jpg"
                   alt=""
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <p class="portfolio-overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                  це дозволить відвідувачу отримати вичерпні відомості про компанію або приватну
-                  особу.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію або приватну особу.
                 </p>
               </div>
               <div class="portfolio-wrapper">
-                <h2 class="portfolio-wrapper__title">Видання Limited Edition</h2>
+                <h2 class="portfolio-wrapper__title">
+                  Видання Limited Edition
+                </h2>
                 <p class="portfolio-wrapper__text">Дизайн</p>
               </div>
             </li>
@@ -235,15 +382,19 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-overlay__img no-gap"
-                  src="./images/portfolio8.jpg"
+                  srcset="
+                    ./images/portfolio-img8.jpg    1x,
+                    ./images/portfolio-img8@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img8.jpg"
                   alt=""
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <p class="portfolio-overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                  це дозволить відвідувачу отримати вичерпні відомості про компанію або приватну
-                  особу.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію або приватну особу.
                 </p>
               </div>
               <div class="portfolio-wrapper">
@@ -255,15 +406,19 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-overlay__img no-gap"
-                  src="./images/portfolio9.jpg"
+                  srcset="
+                    ./images/portfolio-img9.jpg    1x,
+                    ./images/portfolio-img9@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img9.jpg"
                   alt=""
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <p class="portfolio-overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                  це дозволить відвідувачу отримати вичерпні відомості про компанію або приватну
-                  особу.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію або приватну особу.
                 </p>
               </div>
               <div class="portfolio-wrapper">
@@ -281,17 +436,25 @@
     <footer class="footer">
       <div class="container footer-container">
         <div>
-          <a class="footer_link link" href="index.html"><span>Web</span>Studio</a>
+          <a class="footer_link link" href="index.html"
+            ><span>Web</span>Studio</a
+          >
           <address class="andress">
             <ul class="adress__list">
               <li class="adress__item list">
-                <a class="adress__desk link" href="">м. Київ, пр-т Лесі Українки, 26</a>
+                <a class="adress__desk link" href=""
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
               </li>
               <li class="adress__item list">
-                <a class="adress__link link" href="mailto:info@example.com">info@example.com</a>
+                <a class="adress__link link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
               </li>
               <li class="adress__item list">
-                <a class="adress__link link" href="tel:+380991111111">+380991111111</a>
+                <a class="adress__link link" href="tel:+380991111111"
+                  >+380991111111</a
+                >
               </li>
             </ul>
           </address>
@@ -302,28 +465,36 @@
             <li class="footer-wrapper__item">
               <a class="footer-wrapper__link" href="">
                 <svg class="footer-wrapper__icon" width="20" height="20">
-                  <use href="images/icons/symbol-defs.svg#icon-instagram-footer"></use>
+                  <use
+                    href="images/icons/symbol-defs.svg#icon-instagram-footer"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="footer-wrapper__item">
               <a class="footer-wrapper__link" href="">
                 <svg class="footer-wrapper__icon" width="20" height="20">
-                  <use href="images/icons/symbol-defs.svg#icon-twitter-footer"></use>
+                  <use
+                    href="images/icons/symbol-defs.svg#icon-twitter-footer"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="footer-wrapper__item">
               <a class="footer-wrapper__link" href="">
                 <svg class="footer-wrapper__icon" width="20" height="20">
-                  <use href="images/icons/symbol-defs.svg#icon-facebook-footer"></use>
+                  <use
+                    href="images/icons/symbol-defs.svg#icon-facebook-footer"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="footer-wrapper__item">
               <a class="footer-wrapper__link" href="">
                 <svg class="footer-wrapper__icon" width="20" height="20">
-                  <use href="images/icons/symbol-defs.svg#icon-linkedin-1-1"></use>
+                  <use
+                    href="images/icons/symbol-defs.svg#icon-linkedin-1-1"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -333,11 +504,18 @@
           <p class="footer-form__text">Підпишіться на розсилку</p>
           <form class="footer-form">
             <label class="footer-form__label">
-              <input type="email" name="email" placeholder="E-mail" class="footer-form__input" />
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="footer-form__input"
+              />
               <button type="submit" class="footer-form__btn">
                 Підписатися
                 <svg class="footer-form__icon">
-                  <use href="images/icons/symbol-defss.svg#icon-icon-send"></use>
+                  <use
+                    href="images/icons/symbol-defss.svg#icon-icon-send"
+                  ></use>
                 </svg>
               </button>
             </label>
@@ -345,5 +523,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
