@@ -31,8 +31,11 @@
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-
   color: $main-text-color;
+
+  &.current {
+    color: $accent-text-color;
+  }
 }
 .mobile-contacts {
   margin-top: 302px;

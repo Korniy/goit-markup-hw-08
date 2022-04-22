@@ -269,6 +269,10 @@ img {
   color: #212121;
 }
 
+.mobile-nav__link.current {
+  color: #2196f3;
+}
+
 .mobile-contacts {
   margin-top: 302px;
   margin-bottom: 64px;
