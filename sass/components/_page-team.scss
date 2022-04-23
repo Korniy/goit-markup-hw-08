@@ -5,6 +5,11 @@
   background-color: $second-light-bg;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__title {
   margin-bottom: 30px;
@@ -16,6 +21,13 @@
   letter-spacing: 0.03em;
 
   color: $main-text-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .team__item {
@@ -43,6 +55,24 @@
 
     margin-left: 15px;
     margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+  .team__item {
+    min-width: 270px;
+    min-height: 428px;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 

@@ -939,6 +939,13 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .team__title {
   margin-bottom: 30px;
   font-weight: 700;
@@ -947,6 +954,14 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .team__item {
@@ -973,6 +988,28 @@ img {
     height: auto;
     margin-left: 15px;
     margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0;
+  }
+  .team__item {
+    min-width: 270px;
+    min-height: 428px;
+    margin: 0;
+  }
+  .team__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
