@@ -22,7 +22,7 @@ body {
   }
 }
 
-@media scren and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
@@ -1265,6 +1265,12 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .page {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: -webkit-box;
@@ -1573,13 +1579,20 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 64px;
+  }
+}
+
 .portfolio__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1587,13 +1600,25 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__list {
+    margin-bottom: 50px;
   }
 }
 
 .portfolio__item:not(:last-child) {
   margin-right: 8px;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio__btn {
@@ -1666,6 +1691,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .second-list__item {
+    max-width: 370px;
+  }
+}
+
 .portfolio-overlay {
   position: relative;
   overflow: hidden;
@@ -1700,7 +1731,7 @@ img {
   border-left: 1px solid #eeeeee;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-wrapper {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
