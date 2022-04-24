@@ -362,6 +362,12 @@ img {
   margin-bottom: 64px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .mobile-contacts {
+    margin-top: 80px;
+  }
+}
+
 .mobile-contacts__item {
   margin-bottom: 32px;
 }
@@ -445,7 +451,7 @@ img {
 }
 
 .page-hero {
-  max-width: 480px;
+  max-width: 1600px;
   height: 400;
   margin-left: auto;
   margin-right: auto;
@@ -460,9 +466,15 @@ img {
   background-color: #c4c4c4;
 }
 
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .page-hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/hero-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hero-mobile@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .page-hero {
-    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("..//images/hero-desktop.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..//images/hero-desktop.jpg");
     background-repeat: no-repeat;
@@ -471,9 +483,15 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .page-hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/hero-desktop@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hero-desktop@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .page-hero {
-    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -482,6 +500,13 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .page-hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/hero@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hero@2x.jpg);
   }
 }
 
@@ -535,6 +560,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 
 .backdrop.is-hidden {
@@ -561,13 +587,14 @@ img {
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .modal {
     min-width: 300px;
+    min-height: 581px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
-    min-width: 581;
+    min-height: 581px;
   }
 }
 
@@ -589,6 +616,12 @@ img {
   cursor: pointer;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .modal__btn {
+    margin-top: 15px;
+  }
+}
+
 .modal__icon:hover,
 .modal__icon:focus {
   fill: #2196f3;
@@ -606,6 +639,13 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .form__text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 }
 
 .form-field {
@@ -727,6 +767,12 @@ img {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .checkbox {
+    font-size: 10px;
+  }
+}
+
 .checkbox__label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -778,6 +824,12 @@ img {
   .checkbox__link {
     font-size: 14px;
     line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .checkbox__link {
+    font-size: 10px;
   }
 }
 
@@ -901,6 +953,12 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__title {
+    text-align: start;
+  }
 }
 
 .advantages__text {
@@ -1265,7 +1323,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .page {
     text-align: center;
   }
@@ -1721,6 +1779,12 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .portfolio-overlay__text {
+    padding: 100px 5px 5px 0px;
+  }
 }
 
 .portfolio-wrapper {
