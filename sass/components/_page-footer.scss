@@ -180,10 +180,12 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    flex-direction: column;
   }
   @media screen and (min-width: 1200px) {
+    flex-direction: initial;
     margin-left: 93px;
   }
 }
