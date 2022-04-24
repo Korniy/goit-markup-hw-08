@@ -339,6 +339,7 @@ img {
   height: 100%;
   background-color: #ffffff;
   padding: 48px 84px 48px 40px;
+  overflow-y: scroll;
 }
 
 .mobile-nav__item:not(:last-child) {
