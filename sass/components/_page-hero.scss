@@ -81,6 +81,10 @@
         url(..//images/hero@2x.jpg);
     }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-top: 140px;
+  }
 }
 .page-hero__title {
   margin-bottom: 30px;

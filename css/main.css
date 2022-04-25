@@ -517,6 +517,12 @@ img {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .page-hero {
+    padding-top: 140px;
+  }
+}
+
 .page-hero__title {
   margin-bottom: 30px;
   max-width: 360;
