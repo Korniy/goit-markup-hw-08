@@ -57,11 +57,17 @@ img {
 }
 
 .page-header {
-  position: fixed;
   width: 100%;
   height: 60px;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .page-header {
+    position: fixed;
+    z-index: 6;
+  }
 }
 
 @media screen and (min-width: 768px) {
