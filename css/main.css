@@ -1663,6 +1663,12 @@ img {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .portfolio__list {
+    padding-top: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .portfolio__list {
     -webkit-box-pack: center;
