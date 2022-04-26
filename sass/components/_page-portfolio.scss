@@ -120,7 +120,8 @@
   color: $main-light-bg;
   background-color: rgba(33, 150, 243, 0.9);
   @media screen and (min-width: 320px) and (max-width: 479px) {
-    padding: 100px 5px 5px 0px;
+    padding: 150px 24px 160px 24px;
+    font-size: 14px;
   }
 }
 .portfolio-wrapper {
