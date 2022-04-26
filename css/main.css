@@ -1339,7 +1339,6 @@ img {
 @media screen and (max-width: 1199px) {
   .page {
     text-align: center;
-    margin-right: 165px;
   }
 }
 
@@ -1421,6 +1420,12 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-wrapper {
     margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-wrapper {
+    margin-left: 165px;
   }
 }
 
